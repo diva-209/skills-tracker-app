@@ -1,11 +1,5 @@
 package com.nhs.uk.skillstracker.exceptions;
 
-import java.util.Set;
-
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
-
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -30,15 +24,6 @@ public class SkillsTrackerExceptionHandler extends ResponseEntityExceptionHandle
 		errorDetails.setErrorMessage(exception.getMessage());
 
 		return new ResponseEntity<Object>(errorDetails, exception.getStatus());
-	}
-
-	@ExceptionHandler({ ConstraintViolationException.class })
-	public ResponseEntity<Object> handleConstraintViolation(ConstraintViolationException ex, WebRequest request) {
-      
-		
-		ErrorDetails errorDetails = new ErrorDetails(HttpStatus.BAD_REQUEST.value(), HttpStatus.BAD_REQUEST.getReasonPhrase(),
-				ex.getMessage());
-		return new ResponseEntity<Object>(errorDetails, HttpStatus.BAD_REQUEST);
 	}
 
 }
