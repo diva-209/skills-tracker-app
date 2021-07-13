@@ -6,6 +6,7 @@ This app is created as restful API using Spring Boot .
 Please find below the endpoints which are helpful:
 
 Adding employees to an organization :  http://localhost:8080/api/v1/employees
+
 Sample payload : 
 [
     {
@@ -19,15 +20,21 @@ Sample payload :
   ] 
  
  Get Employees :  http://localhost:8080/api/v1/employees
+ 
  getEmployeeByID : http://localhost:8080/api/v1/employees/{id}
+ 
  update employee by ID : http://localhost:8080/api/v1/employees/{id}
+ 
  delete employee by ID : http://localhost:8080/api/v1/employees/{id}
  
  Skills:
  
  Add Skills to Employee : http://localhost:8080/api/v1/employees/{employeeId}/skills
+ 
  get Skills By EmployeeId : http://localhost:8080/api/v1/employees/{employeeId}/skills
+ 
  update skill by skillId for employee : http://localhost:8080/api/v1/employees/{employeeId}/skills/{skillId}
+ 
  delete skill by skillId for employee : http://localhost:8080/api/v1/employees/{employeeId}/skills/{skillId}
  
  
