@@ -8,13 +8,14 @@ Please find below the endpoints which are helpful:
 Adding employees to an organization :  http://localhost:8080/api/v1/employees
 
 Sample payload : 
-[
-    {
-		"firstName": "Divakar",
-        "lastName": "Siriki"        
+
+ [
+       {
+        "firstName": "Divakar",
+         "lastName": "Siriki"        
 	},
-    {
-		"firstName": "Anand",
+       {
+	"firstName": "Anand",
         "lastName": "Satya"        
 	}
   ] 
