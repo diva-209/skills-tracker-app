@@ -9,8 +9,7 @@ Adding employees to an organization :  http://localhost:8080/api/v1/employees
 
 Sample payload : 
 
- [
- 
+ [ 
        {
         "firstName": "Divakar",
          "lastName": "Siriki"        
@@ -18,8 +17,7 @@ Sample payload :
        {
 	"firstName": "Anand",
         "lastName": "Satya"        
-	}
-	
+	}	
   ] 
  
  Get Employees :  http://localhost:8080/api/v1/employees
